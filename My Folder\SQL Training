@@ -1,5 +1,0 @@
-show databases
-show tables in public_records
-CREATE DATABASE IF NOT EXISTS temp_db_user_0 LOCATION 'temp_db_user_0'
-CREATE TABLE temp_db_user_0.mls_backup AS 
-SELECT * FROM public_records.mls
