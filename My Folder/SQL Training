@@ -3,3 +3,13 @@ show tables in public_records
 CREATE DATABASE IF NOT EXISTS temp_db_user_0 LOCATION 'temp_db_user_0'
 CREATE TABLE temp_db_user_0.mls_backup AS 
 SELECT * FROM public_records.mls
+
+SELECT fipscode as fips
+, assessors_parcel_number as apn
+, property_city_name as property_city_name_sam
+, type_financing
+, loan_type
+, bkfsinternal_pid as pid
+, recording_date as recording_date_sam
+, loan_amount
+FROM public_records.sam limit 10
